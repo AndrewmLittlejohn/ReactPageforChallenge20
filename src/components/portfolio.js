@@ -1,11 +1,11 @@
 import React from 'react';
-
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 const Portfolio = () => {
   return (
-    <div >
-      <h1></h1>
-
+    <div className="container">
+      <h1>Portfolio</h1>
+      {/* Add your portfolio items, images, or project descriptions */}
     </div>
   );
 };

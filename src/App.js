@@ -2,8 +2,9 @@ import React from "react";
 import { Route, Routes } from "react-router-dom";
 import AboutMe from "./components/aboutMe";
 import Contact from "./components/contact";
-import Navbar from "./components/NavBar";
+import Navbar from "./components/navBar";
 import Footer from "./components/footer";
+
 import Resume from "./components/resume";
 import Portfolio from "./components/portfolio";
 import "bootstrap/dist/css/bootstrap.min.css";
@@ -17,14 +18,17 @@ function App() {
    
   <main className="container flex-grow-1">
       <Routes>
-        <Route path="/about" component={AboutMe} />
-        <Route exact path="/" component={AboutMe} /> /* redundant so it loads on page load */
-        <Route path="/portfolio" component={Portfolio} />
-        <Route path="/resume" component={Resume} />
-        <Route path="/contact" component={Contact} />
+        <Route path="/about" element={<AboutMe />} />
+        <Route exact path="/" element={<AboutMe />} /> 
+        <Route path="/portfolio" element={<Portfolio />} />
+        <Route path="/resume" element={<Resume />} />
+        <Route path="/contact" element={<Contact />} />
       </Routes>
   </main>
-    <Footer />
+
+    <footer>
+      <Footer />
+    </footer>
 
 </div>
 );

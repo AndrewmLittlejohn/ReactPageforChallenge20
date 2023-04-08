@@ -1,0 +1,29 @@
+.navbar{
+background-color: navy;
+}
+
+link{
+  color: whitesmoke;
+}
+
+footer {
+background-color: midnightblue;
+color: mediumspringgreen;
+
+}
+
+.footerClass{
+    background-color: midnightblue;
+    color: mediumspringgreen;
+}
+#blurb {
+  padding-top: 10%;
+}
+
+#aboutMePic {
+   width: 150px;
+  height: 150px;
+  border-radius: 80%; 
+  object-fit: cover;
+}
+

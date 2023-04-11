@@ -2,7 +2,6 @@ import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 const Resume = () => {
-
   const LineBreaks = 4;
   const whiteSpace = Array(LineBreaks).fill(null).map((_, index) => <br key={index} />);
 

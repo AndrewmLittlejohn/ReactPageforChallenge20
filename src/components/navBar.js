@@ -7,10 +7,11 @@ const Navbar = () => {
     <nav className="navbar navbar-expand-lg navbar-light bg-light" id='NavBarFull'>
       <div className="container">
         <Link className="navbar-brand" to="/">Andrew's React App</Link>
-        <button className="navbar-toggler" type="button">
+        // nav button still doesn't work 
+        <button className="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarContent" type="button">
           <span className="navbar-toggler-icon"></span>
         </button>
-        <div className="collapse navbar-collapse">
+        <div className="collapse navbar-collapse" id="navbarContent">
           <ul className="navbar-nav" id="NavBarList">
             <li className="nav-item">
               <Link className="nav-link" to="/about">About Me</Link>
